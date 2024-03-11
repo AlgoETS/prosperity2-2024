@@ -2,6 +2,8 @@
 
 Welcome to `Prosperity2-2024`, an immersive algorithmic trading challenge hosted by IMC. In this competition, participants design and implement trading algorithms to compete on a simulated exchange, trading virtual products to earn as many SeaShells (the currency of the archipelago) as possible. With new products introduced in various rounds and dynamic market conditions, `Prosperity2-2024` offers a unique platform to test and refine your trading strategies.
 
+2023 backtest: https://github.com/n-0/backtest-imc-prosperity-2023
+
 ## Getting Started
 
 ### Prerequisites
