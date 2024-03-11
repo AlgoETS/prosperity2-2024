@@ -41,6 +41,10 @@ class Trader:
         for product, order_depth in state.order_depths.items():
             orders: List[Order] = []
 
+            # Initialize EMA values for the product if not already present
+            if product not in self.ema_values:
+                self.ema_values[product] = {'fast': None, 'slow': None}
+
             historical_prices = [trade.price for trade in state.own_trades.get(product, [])] + [trade.price for trade in state.market_trades.get(product, [])]
             if historical_prices:
                 self.ema_values[product]['fast'] = self.calculate_ema(historical_prices, self.fast_ema_period, self.ema_values[product].get('fast'))
